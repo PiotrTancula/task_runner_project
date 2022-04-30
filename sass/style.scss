@@ -1,0 +1,295 @@
+// header
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6vh ;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 1vh;
+    color: white;
+}
+.wrapper {
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.imagewrapper{
+    background-image: url("https://images.pexels.com/photos/861440/pexels-photo-861440.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+}
+
+.logo h1 {
+    font-family: 'Water Brush', cursive;
+    color:yellow;
+}
+
+div.splash {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+header h1 , h2  {
+    padding-bottom: 4vh;
+    color: white;
+    letter-spacing: 0.5vw;
+}
+
+.splash a {
+    text-decoration: none;
+    padding: 2vh 2vw;
+    background-color: rgba(255, 255, 0, 0.662);
+    border-radius: 6px;
+    font-weight: 900;
+    color: white;
+}
+
+// services
+
+.services {
+    padding: 2vw 0vw;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+
+}
+
+.services h1  {
+    padding-top: 4vw;
+    color: black;
+    font-weight: 900;
+}
+
+.services p {
+    font-weight: 100;
+    padding-bottom: 4vw;
+}
+
+.servicesbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    display:flex;
+    flex-direction: column;
+    flex: 0 0 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    color : rgba(214, 214, 59, 0.868);
+}
+
+.round {
+ width:4vw;
+    height:4vw;
+    border: 2px solid rgba(214, 214, 59, 0.868);
+    text-align: center;
+    line-height: 4vw;
+    border-radius: 50%;
+}
+
+// ourpotfolio
+
+.image img {
+    width: 100%;
+  height: auto;
+  object-fit:cover;
+  line-height: 0;
+
+}
+
+.ourportfolio {
+    background-color: rgb(201, 201, 201);
+    padding: 0 2vw;
+}
+
+.imagefooter h6 , .imagefooter p {
+    margin: 0;
+    padding: 1vw 0;
+}
+
+.imagefooter p {
+    font-size:1vh;
+    margin-bottom:1vw;
+}
+
+.imagefooter {
+    width: 100%;
+    background-color: white;
+}
+
+.ourportfolio .wrapper .servicesbox .box {
+    margin: 0;
+
+    padding: 2vw;
+    line-height: 0;
+}
+
+
+
+// footer
+
+footer .wrapper {
+    display: flex;
+    flex-direction: row;
+
+}
+
+footer .wrapper ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+footer .wrapper ul a {
+    padding: 1vw;
+}
+
+.footerwrapper {
+    width:58%;
+    margin-left : 4vw;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textbox {
+    margin: auto 0;
+}
+
+.round {
+    width: 4vw;
+    height: 4vw;
+    background-color: black;
+    border: none;
+    margin: 10px;
+}
+
+i {
+    color: white;
+}
+
+
+@media (max-width:480px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0vh ;
+        font-weight: 400;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li  {
+        text-decoration: none;
+        margin-bottom: 5px;
+        padding: 1vh;
+        color: rgb(162, 230, 15);
+        font-weight: 900;
+    }
+
+    nav ul li  a {
+        color: rgb(162, 230, 15);
+    }
+
+    .splash a {
+        padding: 2px 2px;
+    }
+
+    .logo h1 {
+        margin: 0 auto;
+    }
+
+    header h1 , header h2 {
+        font-size: 2vh;
+        padding-bottom : 2vh;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+    }
+
+    // services
+
+    .servicesbox {
+        flex-direction: column;
+    }
+
+    .box p , .services .wrapper p{
+        font-weight: 400;
+    }
+
+    .imagefooter h6 , .imagefooter p{
+        padding: 3vh;
+    }
+
+    // footer
+
+    .round {
+        width: 10vw;
+        height: 10vw;
+        margin: auto;
+        line-height: 10vw;
+   }
+
+    .imagefooter p {
+        font-size: 2vh;
+    }
+
+    footer .wrapper .footerwrapper {
+        justify-content: space-around;
+        margin-left: 10vw;
+    }
+
+    footer .wrapper .footerwrapper ul  {
+        margin: 1px;
+    }
+
+    footer .wrapper .footerwrapper ul li {
+        padding: 1px;
+    }
+
+    .textbox{
+        font-size: 1vh;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+    }
+}
